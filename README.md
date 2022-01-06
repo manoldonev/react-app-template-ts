@@ -1,3 +1,5 @@
+![build workflow](https://github.com/manoldonev/react-todo-app-ts/actions/workflows/main.yml/badge.svg)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
