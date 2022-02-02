@@ -1,4 +1,4 @@
-![ci workflow](https://github.com/manoldonev/react-app-template-ts/actions/workflows/main.yml/badge.svg)
+![license](https://img.shields.io/github/license/manoldonev/react-app-template-ts?style=plastic)  ![ci workflow](https://github.com/manoldonev/react-app-template-ts/actions/workflows/main.yml/badge.svg)
 
 # React TypeScript App Template
 
