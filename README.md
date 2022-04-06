@@ -1,10 +1,11 @@
-![license](https://img.shields.io/github/license/manoldonev/react-app-template-ts?style=plastic)  ![ci workflow](https://github.com/manoldonev/react-app-template-ts/actions/workflows/main.yml/badge.svg)
+![license](https://img.shields.io/github/license/manoldonev/react-app-template-ts?style=plastic) ![ci workflow](https://github.com/manoldonev/react-app-template-ts/actions/workflows/main.yml/badge.svg)
 
 # React TypeScript App Template
 
 This is a Github template repo that can be used for rapid application prototyping of React TypeScript applications:
 
-- Based on react-scripts@5.0.0 (CRA)
+- Based on CRA (react-scripts@5.0.0)
+- React 18
 - Prettier
 - Eslint set up (pretty strict ruleset -- check the `.eslintrc` contents)
 - Git pre-commit hook setup (`husky` & `lint-staged`)
