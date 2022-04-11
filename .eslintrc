@@ -3,7 +3,6 @@
     "browser": true, // Browser global variables like `window` etc.
     "commonjs": true, // CommonJS global variables and CommonJS scoping.Allows require, exports and module.
     "es6": true, // Enable all ECMAScript 6 features except for modules.
-    "jest": true, // Jest global variables like `it` etc.
     "node": true // Defines things like process.env when generating through node
   },
   "extends": [
@@ -18,8 +17,6 @@
     "airbnb/hooks",
     "airbnb-typescript",
     "plugin:react/jsx-runtime", // Using new JSX transform from React 17 so disable relevant rules
-    "plugin:jest/recommended",
-    "plugin:testing-library/react",
     "prettier",
     // Make sure this is always the last configuration in the extends array
     "plugin:prettier/recommended" // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors.
@@ -33,7 +30,7 @@
     },
     "project": "./tsconfig.json"
   },
-  "plugins": ["@typescript-eslint", "testing-library", "react", "jsx-a11y"],
+  "plugins": ["@typescript-eslint", "react", "jsx-a11y"],
   "root": true, // For configuration cascading
   "rules": {
     "@typescript-eslint/array-type": [
@@ -42,7 +39,7 @@
         "default": "array-simple"
       }
     ],
-    // "@typescript-eslint/consistent-type-exports": "error",
+    "@typescript-eslint/consistent-type-exports": "error",
     "@typescript-eslint/consistent-type-imports": "error",
     "@typescript-eslint/explicit-function-return-type": [
       "error",
@@ -69,24 +66,11 @@
     "@typescript-eslint/prefer-includes": "error",
     "@typescript-eslint/prefer-nullish-coalescing": "error",
     "@typescript-eslint/prefer-optional-chain": "error",
-    // "@typescript-eslint/prefer-readonly-parameter-types": "error",
     "@typescript-eslint/prefer-reduce-type-parameter": "error",
     "@typescript-eslint/prefer-regexp-exec": "error",
     "@typescript-eslint/prefer-string-starts-ends-with": "error",
     "@typescript-eslint/promise-function-async": "error",
     "@typescript-eslint/strict-boolean-expressions": "error",
-    "testing-library/no-manual-cleanup": "error",
-    "testing-library/no-render-in-setup": "error",
-    "testing-library/no-wait-for-snapshot": "error",
-    "testing-library/prefer-explicit-assert": "error",
-    "testing-library/prefer-presence-queries": "error",
-    "testing-library/prefer-wait-for": "error",
-    // TODO: enable when react-scripts start using eslint-plugin-testing-library v4.3.0+
-    // "testing-library/no-unnecessary-act": "error",
-    // "testing-library/no-wait-for-multiple-assertions": "error",
-    // "testing-library/no-wait-for-side-effects": "error",
-    // "testing-library/prefer-query-by-disappearance": "error",
-    // "testing-library/prefer-user-event": "error",
     "react/require-default-props": [
       "error",
       {
@@ -117,8 +101,46 @@
       }
     ],
     "import/prefer-default-export": "off",
-    "import/no-default-export": "error"
+    "import/no-default-export": "error",
+    "jsx-a11y/label-has-associated-control": ["error", { "assert": "either" }],
+    "@typescript-eslint/no-misused-promises": [
+      "error",
+      {
+        "checksVoidReturn": false
+      }
+    ]
   },
+  "overrides": [
+    // NOTE: extracted jest/testing-library rules so template can be easily extended for cypress e2e linting as well
+    // {
+    //   "files": ["cypress/**/*.ts"],
+    //   "extends": ["plugin:cypress/recommended"]
+    // },
+    {
+      "files": ["src/**/*.test.{ts,tsx}"],
+      "extends": [
+        "plugin:jest/recommended",
+        "plugin:jest/style",
+        "plugin:jest-dom/recommended",
+        "plugin:testing-library/react"
+      ],
+      "rules": {
+        "testing-library/no-manual-cleanup": "error",
+        "testing-library/no-render-in-setup": "error",
+        "testing-library/no-wait-for-snapshot": "error",
+        "testing-library/prefer-explicit-assert": "error",
+        "testing-library/prefer-presence-queries": "error",
+        "testing-library/prefer-wait-for": "error",
+        "testing-library/no-unnecessary-act": "error",
+        "testing-library/no-wait-for-multiple-assertions": "error",
+        "testing-library/no-wait-for-side-effects": "error",
+        "testing-library/prefer-query-by-disappearance": "error",
+        "testing-library/prefer-user-event": "error",
+        "testing-library/no-debugging-utils": "warn",
+        "jest/no-focused-tests": "warn"
+      }
+    }
+  ],
   "settings": {
     "react": {
       "version": "detect" // Tells eslint-plugin-react to automatically detect the version of React to use
