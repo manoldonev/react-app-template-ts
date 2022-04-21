@@ -4,7 +4,7 @@
   ],
   "*.{ts,tsx}": [
     "prettier --write",
-    "npm run lint:fix -- --cache",
+    "npm run lint:fix -- --cache --cache-location ./node_modules/.cache/.eslintcache",
     "tsc-files --noEmit",
     "npm run test:related"
   ]
