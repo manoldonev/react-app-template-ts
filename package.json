@@ -54,7 +54,7 @@
     "predeploy": "pnpm run build",
     "deploy": "gh-pages -d build",
     "test": "jest --watchAll",
-    "test:related": "pnpm run test -- --bail --watchAll=false --findRelatedTests 'src/.+test.tsx?' --passWithNoTests",
+    "test:related": "pnpm run test --bail --watchAll=false --findRelatedTests src/**/*.{ts,tsx} --passWithNoTests",
     "lint": "eslint src/**/*.{ts,tsx} --quiet",
     "lint:fix": "eslint --fix --ext src/**/*.{ts,tsx}",
     "prettier": "prettier --check src"
