@@ -4,13 +4,15 @@
 
 This is a Github template repo that can be used for rapid application prototyping of React TypeScript applications:
 
-- Based on Vite (super-fast project tooling)
+- Based on Vite
 - React 18
 - Prettier
-- Eslint set up (pretty strict ruleset -- check the `.eslintrc` contents)
+- Eslint setup (strict ruleset -- check the `.eslintrc` contents)
 - Git pre-commit hook setup (`husky` & `lint-staged`)
 - Deployment setup (`gh-pages`)
 - Github Actions CI workflow
+- Dependency management via [Renovate](https://www.whitesourcesoftware.com/free-developer-tools/renovate/)
+- Package management via [pnpm](https://pnpm.io/)
 
 Make sure to update the following if using the template:
 
@@ -21,7 +23,7 @@ Make sure to update the following if using the template:
 
 In the project directory, you can run:
 
-### `npm start`
+### `pnpm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000/react-app-template-ts/](http://localhost:3000/react-app-template-ts/) to view it in the browser.
@@ -29,11 +31,11 @@ Open [http://localhost:3000/react-app-template-ts/](http://localhost:3000/react-
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+### `pnpm test`
 
 Launches the test runner in the interactive watch mode.
 
-### `npm run build`
+### `pnpm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
