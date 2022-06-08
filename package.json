@@ -71,5 +71,12 @@
       "last 1 safari version"
     ]
   },
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "@types/jest": "28"
+      }
+    }
+  },
   "packageManager": "pnpm@7.1.7"
 }
