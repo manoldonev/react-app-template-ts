@@ -11,8 +11,6 @@
     "plugin:@typescript-eslint/recommended", // set of opinionated rules that adhere to TypeScript best practices
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:eslint-comments/recommended",
-    // "plugin:import/recommended",
-    // "plugin:import/typescript",
     "airbnb",
     "airbnb/hooks",
     "airbnb-typescript",
@@ -30,7 +28,11 @@
     },
     "project": "./tsconfig.json"
   },
-  "plugins": ["@typescript-eslint", "react", "jsx-a11y"],
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "jsx-a11y"
+  ],
   "root": true, // For configuration cascading
   "rules": {
     "@typescript-eslint/array-type": [
@@ -90,7 +92,10 @@
       "error",
       {
         "props": true,
-        "ignorePropertyModificationsForRegex": ["^draft", "keys"]
+        "ignorePropertyModificationsForRegex": [
+          "^draft",
+          "keys"
+        ]
       }
     ],
     "react/function-component-definition": [
@@ -102,7 +107,12 @@
     ],
     "import/prefer-default-export": "off",
     "import/no-default-export": "error",
-    "jsx-a11y/label-has-associated-control": ["error", { "assert": "either" }],
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "assert": "either"
+      }
+    ],
     "@typescript-eslint/no-misused-promises": [
       "error",
       {
@@ -111,16 +121,11 @@
     ]
   },
   "overrides": [
-    // NOTE: extracted jest/testing-library rules so template can be easily extended for cypress e2e linting as well
-    // {
-    //   "files": ["cypress/**/*.ts"],
-    //   "extends": ["plugin:cypress/recommended"]
-    // },
     {
-      "files": ["src/**/*.test.{ts,tsx}"],
+      "files": [
+        "src/**/*.test.{ts,tsx}"
+      ],
       "extends": [
-        "plugin:jest/recommended",
-        "plugin:jest/style",
         "plugin:jest-dom/recommended",
         "plugin:testing-library/react"
       ],
@@ -136,8 +141,7 @@
         "testing-library/no-wait-for-side-effects": "error",
         "testing-library/prefer-query-by-disappearance": "error",
         "testing-library/prefer-user-event": "error",
-        "testing-library/no-debugging-utils": "warn",
-        "jest/no-focused-tests": "warn"
+        "testing-library/no-debugging-utils": "warn"
       }
     }
   ],

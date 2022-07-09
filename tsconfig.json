@@ -1,8 +1,16 @@
 {
   "compilerOptions": {
-    "types": ["jest", "vite/client"],
+    "types": [
+      "vite/client",
+      "vitest/globals",
+      "@testing-library/jest-dom"
+    ],
     "target": "es2015", // Specify ECMAScript target version
-    "lib": ["dom", "dom.iterable", "esnext"], // List of library files to be included in the compilation
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ], // List of library files to be included in the compilation
     "allowJs": true, // Allow JavaScript files to be compiled
     "skipLibCheck": true, // Skip type checking of all declaration files
     "esModuleInterop": true, // Disables namespace imports (import * as fs from "fs") and enables CJS/AMD/UMD style imports (import fs from "fs")
@@ -25,7 +33,7 @@
     "strictPropertyInitialization": true
   },
   "include": [
-    "src/**/*" // *** The files TypeScript should type check ***
+    "src",
+    "*.config.ts" // *** The files TypeScript should type check ***
   ],
-  "exclude": ["node_modules", "build"] // *** The files to not type check ***
 }

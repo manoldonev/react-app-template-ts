@@ -1,16 +1,14 @@
-![license](https://img.shields.io/github/license/manoldonev/react-app-template-ts?style=plastic) ![ci workflow](https://github.com/manoldonev/react-app-template-ts/actions/workflows/main.yml/badge.svg)
+![license](https://img.shields.io/github/license/manoldonev/react-app-template-ts?style=plastic) ![ci workflow](https://github.com/manoldonev/react-app-template-ts/actions/workflows/main.yml/badge.svg) ![pnpm](https://img.shields.io/badge/maintained%20with-pnpm-f69203.svg?logo=pnpm)
 
 # React TypeScript App Template
 
 This is a Github template repo that can be used for rapid application prototyping of React TypeScript applications:
 
-- Based on Vite
 - React 18
-- Prettier
-- Eslint setup (strict ruleset -- check the `.eslintrc` contents)
+- Vite / Vitest setup
+- Prettier & Eslint setup (strict ruleset -- check the `.eslintrc` contents)
+- Github Actions CI & deployment workflows
 - Git pre-commit hook setup (`husky` & `lint-staged`)
-- Deployment setup (`gh-pages`)
-- Github Actions CI workflow
 - Dependency management via [Renovate](https://www.whitesourcesoftware.com/free-developer-tools/renovate/)
 - Package management via [pnpm](https://pnpm.io/)
 
