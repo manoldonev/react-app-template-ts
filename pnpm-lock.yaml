@@ -36,7 +36,7 @@ specifiers:
   typescript: ^4.7.4
   vite: ^3.0.0
   vite-tsconfig-paths: ^3.5.0
-  vitest: ^0.22.0
+  vitest: ^0.23.0
   web-vitals: ^3.0.0
   whatwg-fetch: ^3.6.2
 
@@ -76,7 +76,7 @@ dependencies:
   typescript: 4.7.4
   vite: 3.0.0
   vite-tsconfig-paths: 3.5.0_vite@3.0.0
-  vitest: 0.22.1_jsdom@20.0.0
+  vitest: 0.23.1_jsdom@20.0.0
   web-vitals: 3.0.0
   whatwg-fetch: 3.6.2
 
@@ -4179,6 +4179,12 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
+  /strip-literal/0.4.0:
+    resolution: {integrity: sha512-ql/sBDoJOybTKSIOWrrh8kgUEMjXMwRAkZTD0EwiwxQH/6tTPkZvMIEjp0CRlpi6V5FMiJyvxeRkEi1KrGISoA==}
+    dependencies:
+      acorn: 8.7.1
+    dev: false
+
   /strip-outer/1.0.1:
     resolution: {integrity: sha512-k55yxKHwaXnpYGsOzg4Vl8+tDrWylxDEpknGjhTiZB8dFRU5rTo9CAzeycivxV3s+zlTKwrs6WxMxR95n26kwg==}
     engines: {node: '>=0.10.0'}
@@ -4226,6 +4232,10 @@ packages:
     resolution: {integrity: sha512-iOqSav00cVxEEICeD7TjLB1sueEL+81Wpzp2bY17uZjZN0pWZPuo4suZ/61VujxmqSGFfgOcNuTZ85QJwNZQpw==}
     dependencies:
       readable-stream: 3.6.0
+    dev: false
+
+  /tinybench/2.1.5:
+    resolution: {integrity: sha512-ak+PZZEuH3mw6CCFOgf5S90YH0MARnZNhxjhjguAmoJimEMAJuNip/rJRd6/wyylHItomVpKTzZk9zrhTrQCoQ==}
     dev: false
 
   /tinypool/0.2.4:
@@ -4499,8 +4509,8 @@ packages:
       fsevents: 2.3.2
     dev: false
 
-  /vitest/0.22.1_jsdom@20.0.0:
-    resolution: {integrity: sha512-+x28YTnSLth4KbXg7MCzoDAzPJlJex7YgiZbUh6YLp0/4PqVZ7q7/zyfdL0OaPtKTpNiQFPpMC8Y2MSzk8F7dw==}
+  /vitest/0.23.1_jsdom@20.0.0:
+    resolution: {integrity: sha512-kn9pG+h6VA3yj/xRvwgLKEd33rOlzMqJEg3tl5HSm3WUPlkY1Lr1FK8RN1uIqVKvFxmz6HGU3EQW+xW2kazRkQ==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
@@ -4528,6 +4538,8 @@ packages:
       debug: 4.3.4
       jsdom: 20.0.0
       local-pkg: 0.4.2
+      strip-literal: 0.4.0
+      tinybench: 2.1.5
       tinypool: 0.2.4
       tinyspy: 1.0.2
       vite: 3.0.0
