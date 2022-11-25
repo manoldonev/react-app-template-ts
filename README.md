@@ -11,6 +11,7 @@ This is a Github template repo that can be used for rapid application prototypin
 - Git pre-commit hook setup (`husky` & `lint-staged`)
 - Dependency management via [Renovate](https://www.whitesourcesoftware.com/free-developer-tools/renovate/)
 - Package management via [pnpm](https://pnpm.io/)
+- CSS Reset
 
 Make sure to update the following if using the template:
 
