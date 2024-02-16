@@ -32,8 +32,9 @@
     "noImplicitAny": true,
     "strictPropertyInitialization": true
   },
-  "include": [
+  "include": [ // *** The files TypeScript should type check ***
     "src",
-    "*.config.ts" // *** The files TypeScript should type check ***
+    "*.config.ts",
+    "vitest.setup.ts"
   ],
 }
