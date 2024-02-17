@@ -21,7 +21,7 @@ dependencies:
     specifier: ^14.2.1
     version: 14.2.1(@testing-library/dom@9.0.1)
   '@types/node':
-    specifier: ^20.0.0
+    specifier: ^20.11.19
     version: 20.11.19
   '@types/react':
     specifier: ^18.0.15
