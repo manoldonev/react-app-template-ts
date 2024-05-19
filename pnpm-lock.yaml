@@ -48,8 +48,8 @@ dependencies:
     specifier: ^19.0.4
     version: 19.0.4(eslint-plugin-import@2.26.0)(eslint-plugin-jsx-a11y@6.6.0)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.30.1)(eslint@8.56.0)
   eslint-config-airbnb-typescript:
-    specifier: ^17.1.0
-    version: 17.1.0(@typescript-eslint/eslint-plugin@7.0.1)(@typescript-eslint/parser@7.0.1)(eslint-plugin-import@2.26.0)(eslint@8.56.0)
+    specifier: ^18.0.0
+    version: 18.0.0(@typescript-eslint/eslint-plugin@7.0.1)(@typescript-eslint/parser@7.0.1)(eslint-plugin-import@2.26.0)(eslint@8.56.0)
   eslint-config-prettier:
     specifier: ^9.0.0
     version: 9.1.0(eslint@8.56.0)
@@ -1645,8 +1645,8 @@ packages:
     resolution: {integrity: sha512-iSDYZMMyTPkiFasVqfuAQnWAYcvO/SeBSCGKePoEthjp4LEMTe4uLc7b025o4jAZpHhihh8xPo99TNWUWWkGDQ==}
     engines: {node: '>= 0.4'}
     dependencies:
-      call-bind: 1.0.2
-      define-properties: 1.1.4
+      call-bind: 1.0.7
+      define-properties: 1.2.1
       es-abstract: 1.20.1
       get-intrinsic: 1.1.2
       is-string: 1.0.7
@@ -1673,8 +1673,8 @@ packages:
     resolution: {integrity: sha512-12IUEkHsAhA4DY5s0FPgNXIdc8VRSqD9Zp78a5au9abH/SOBrsp082JOWFNTjkMozh8mqcdiKuaLGhPeYztxSw==}
     engines: {node: '>= 0.4'}
     dependencies:
-      call-bind: 1.0.2
-      define-properties: 1.1.4
+      call-bind: 1.0.7
+      define-properties: 1.2.1
       es-abstract: 1.20.1
       es-shim-unscopables: 1.0.0
     dev: false
@@ -2375,24 +2375,24 @@ packages:
       confusing-browser-globals: 1.0.11
       eslint: 8.56.0
       eslint-plugin-import: 2.26.0(@typescript-eslint/parser@7.0.1)(eslint@8.56.0)
-      object.assign: 4.1.2
+      object.assign: 4.1.5
       object.entries: 1.1.5
       semver: 6.3.1
     dev: false
 
-  /eslint-config-airbnb-typescript@17.1.0(@typescript-eslint/eslint-plugin@7.0.1)(@typescript-eslint/parser@7.0.1)(eslint-plugin-import@2.26.0)(eslint@8.56.0):
-    resolution: {integrity: sha512-GPxI5URre6dDpJ0CtcthSZVBAfI+Uw7un5OYNVxP2EYi3H81Jw701yFP7AU+/vCE7xBtFmjge7kfhhk4+RAiig==}
+  /eslint-config-airbnb-typescript@18.0.0(@typescript-eslint/eslint-plugin@7.0.1)(@typescript-eslint/parser@7.0.1)(eslint-plugin-import@2.26.0)(eslint@8.56.0):
+    resolution: {integrity: sha512-oc+Lxzgzsu8FQyFVa4QFaVKiitTYiiW3frB9KYW5OWdPrqFc7FzxgB20hP4cHMlr+MBzGcLl3jnCOVOydL9mIg==}
     peerDependencies:
-      '@typescript-eslint/eslint-plugin': ^5.13.0 || ^6.0.0
-      '@typescript-eslint/parser': ^5.0.0 || ^6.0.0
-      eslint: ^7.32.0 || ^8.2.0
-      eslint-plugin-import: ^2.25.3
+      '@typescript-eslint/eslint-plugin': ^7.0.0
+      '@typescript-eslint/parser': ^7.0.0
+      eslint: ^8.56.0
     dependencies:
       '@typescript-eslint/eslint-plugin': 7.0.1(@typescript-eslint/parser@7.0.1)(eslint@8.56.0)(typescript@5.3.3)
       '@typescript-eslint/parser': 7.0.1(eslint@8.56.0)(typescript@5.3.3)
       eslint: 8.56.0
       eslint-config-airbnb-base: 15.0.0(eslint-plugin-import@2.26.0)(eslint@8.56.0)
-      eslint-plugin-import: 2.26.0(@typescript-eslint/parser@7.0.1)(eslint@8.56.0)
+    transitivePeerDependencies:
+      - eslint-plugin-import
     dev: false
 
   /eslint-config-airbnb@19.0.4(eslint-plugin-import@2.26.0)(eslint-plugin-jsx-a11y@6.6.0)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.30.1)(eslint@8.56.0):
@@ -2904,8 +2904,8 @@ packages:
     resolution: {integrity: sha512-uN7m/BzVKQnCUF/iW8jYea67v++2u7m5UgENbHRtdDVclOUP+FMPlCNdmk0h/ysGyo2tavMJEDqJAkJdRa1vMA==}
     engines: {node: '>= 0.4'}
     dependencies:
-      call-bind: 1.0.2
-      define-properties: 1.1.4
+      call-bind: 1.0.7
+      define-properties: 1.2.1
       es-abstract: 1.20.1
       functions-have-names: 1.2.3
     dev: false
@@ -2966,8 +2966,8 @@ packages:
     resolution: {integrity: sha512-2EmdH1YvIQiZpltCNgkuiUnyukzxM/R6NDJX31Ke3BG1Nq5b0S2PhX59UKi9vZpPDQVdqn+1IcaAwnzTT5vCjw==}
     engines: {node: '>= 0.4'}
     dependencies:
-      call-bind: 1.0.2
-      get-intrinsic: 1.1.2
+      call-bind: 1.0.7
+      get-intrinsic: 1.2.4
     dev: false
 
   /gh-pages@6.1.1:
@@ -3103,7 +3103,7 @@ packages:
   /has-property-descriptors@1.0.0:
     resolution: {integrity: sha512-62DVLZGoiEBDHQyqG4w9xCuZ7eJEwNmJRWw2VY84Oedb7WFcA27fiEVe8oUQx9hAUJ4ekurquucTGwsyO1XGdQ==}
     dependencies:
-      get-intrinsic: 1.1.2
+      get-intrinsic: 1.2.4
     dev: false
 
   /has-property-descriptors@1.0.2:
@@ -3302,7 +3302,7 @@ packages:
     resolution: {integrity: sha512-gDYaKHJmnj4aWxyj6YHyXVpdQawtVLHU5cb+eztPGczf6cjuTdwve5ZIEfgXqH4e57An1D1AKf8CZ3kYrQRqYA==}
     engines: {node: '>= 0.4'}
     dependencies:
-      call-bind: 1.0.2
+      call-bind: 1.0.7
       has-tostringtag: 1.0.0
     dev: false
 
@@ -3403,7 +3403,7 @@ packages:
     resolution: {integrity: sha512-kvRdxDsxZjhzUX07ZnLydzS1TU/TJlTUHHY4YLL87e37oUA49DfkLqgy+VjFocowy29cKvcSiu+kIv728jTTVg==}
     engines: {node: '>= 0.4'}
     dependencies:
-      call-bind: 1.0.2
+      call-bind: 1.0.7
       has-tostringtag: 1.0.0
     dev: false
 
@@ -3415,7 +3415,7 @@ packages:
   /is-shared-array-buffer@1.0.2:
     resolution: {integrity: sha512-sqN2UDu1/0y6uvXyStCOzyhAjCSlHceFoMKJW8W9EU9cvic/QdsZ0kEU93HEy3IUEFZIiH/3w+AH/UQbPHNdhA==}
     dependencies:
-      call-bind: 1.0.2
+      call-bind: 1.0.7
     dev: false
 
   /is-shared-array-buffer@1.0.3:
@@ -3464,7 +3464,7 @@ packages:
   /is-weakref@1.0.2:
     resolution: {integrity: sha512-qctsuLZmIQ0+vSSMfoVvyFe2+GSEvnmZ2ezTup1SBse9+twCCeial6EEi3Nc2KFcf6+qz2FBPnjXsk8xhKSaPQ==}
     dependencies:
-      call-bind: 1.0.2
+      call-bind: 1.0.7
     dev: false
 
   /is-weakset@2.0.3:
@@ -3621,7 +3621,7 @@ packages:
     engines: {node: '>=4.0'}
     dependencies:
       array-includes: 3.1.5
-      object.assign: 4.1.2
+      object.assign: 4.1.5
     dev: false
 
   /kind-of@6.0.3:
@@ -4066,8 +4066,8 @@ packages:
     resolution: {integrity: sha512-QUZRW0ilQ3PnPpbNtgdNV1PDbEqLIiSFB3l+EnGtBQ/8SUTLj1PZwtQHABZtLgwpJZTSZhuGLOGk57Drx2IvYg==}
     engines: {node: '>= 0.4'}
     dependencies:
-      call-bind: 1.0.2
-      define-properties: 1.1.4
+      call-bind: 1.0.7
+      define-properties: 1.2.1
       es-abstract: 1.20.1
     dev: false
 
@@ -4804,16 +4804,16 @@ packages:
   /string.prototype.trimend@1.0.5:
     resolution: {integrity: sha512-I7RGvmjV4pJ7O3kdf+LXFpVfdNOxtCW/2C8f6jNiW4+PQchwxkCDzlk1/7p+Wl4bqFIZeF47qAHXLuHHWKAxog==}
     dependencies:
-      call-bind: 1.0.2
-      define-properties: 1.1.4
+      call-bind: 1.0.7
+      define-properties: 1.2.1
       es-abstract: 1.20.1
     dev: false
 
   /string.prototype.trimstart@1.0.5:
     resolution: {integrity: sha512-THx16TJCGlsN0o6dl2o6ncWUsdgnLRSA23rRE5pyGBw/mLr3Ej/R2LaqCtgP8VNMGZsvMWnf9ooZPyY2bHvUFg==}
     dependencies:
-      call-bind: 1.0.2
-      define-properties: 1.1.4
+      call-bind: 1.0.7
+      define-properties: 1.2.1
       es-abstract: 1.20.1
     dev: false
 
@@ -5108,7 +5108,7 @@ packages:
   /unbox-primitive@1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
     dependencies:
-      call-bind: 1.0.2
+      call-bind: 1.0.7
       has-bigints: 1.0.2
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
